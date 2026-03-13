@@ -54,10 +54,13 @@ myButton.addEventListener('click', function() {
 })
 
 function tap() {
-  prompt("How old are you now?")
-  let age = 17;
+   let age = parseInt(prompt("How old are you now?"))
   
-  if (age === 17) {
+  
+  if (age <=16) {
+    alert("You are growing young!😂")
+  }
+  else if(age === 17){
     alert("Nine more years remaining for us to meet hopefully🤗")
   }
   
